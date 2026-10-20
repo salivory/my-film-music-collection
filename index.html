@@ -15,7 +15,7 @@
 <section class="panel"><div id="tableTitle" style="font-weight:700;margin-bottom:10px">پیش‌نمایش اطلاعات</div><div class="tablewrap"><table><thead id="thead"></thead><tbody id="tbody"><tr><td class="empty">هنوز فایلی وارد نشده است.</td></tr></tbody></table></div><div class="pager"><button class="btn" id="prev">قبلی</button><span id="pageInfo">صفحه ۰</span><button class="btn" id="next">بعدی</button></div></section>
 <div class="foot">نسخه اولیه · داده‌ها روی دستگاه شما · خروجی پشتیبان Excel را به‌طور منظم ذخیره کنید</div>
 </main>
-<script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+<script src="./xlsx.full.min.js"></script>
 <script>
 (()=>{'use strict';const $=id=>document.getElementById(id);let workbook=null,db=null,page=0,allSheets=[],viewRows=[];const DB='collection-local-db',STORE='workbooks',KEY='main';
 function msg(t,good=true){$('status').textContent=t;$('status').style.color=good?'#176b55':'#a33'}
