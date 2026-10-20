@@ -1,5 +1,5 @@
-const CACHE_NAME = 'collection-ios-shell-v3';
-const SHELL = ['./', './index.html', './manifest.webmanifest', './icon.svg', './xlsx.full.min.js'];
+const CACHE_NAME = 'collection-ios-shell-v5';
+const SHELL = ['./', './index.html', './manifest.webmanifest', './icon.svg', './xlsx.full.min.js', './manage.js'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
 });
